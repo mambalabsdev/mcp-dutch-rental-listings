@@ -1,0 +1,51 @@
+{
+  "name": "@mambalabsdev/mcp-dutch-rental-listings",
+  "version": "1.0.0",
+  "description": "MCP server for Dutch Rental Listings. Kamernet, HousingAnywhere, and anti-squat agency listings in one list. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-dutch-rental-listings": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "netherlands",
+    "rental",
+    "kamernet",
+    "housinganywhere",
+    "anti-squat",
+    "real estate",
+    "apify",
+    "clay"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/dutch-rental-listings",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-dutch-rental-listings"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-dutch-rental-listings"
+}

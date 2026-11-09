@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-dutch-rental-listings": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-dutch-rental-listings"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}

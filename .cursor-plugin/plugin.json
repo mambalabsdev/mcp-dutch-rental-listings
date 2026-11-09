@@ -1,0 +1,33 @@
+{
+  "name": "mcp-dutch-rental-listings",
+  "displayName": "Dutch Rental Listings",
+  "version": "1.0.0",
+  "description": "MCP server for Dutch Rental Listings. Kamernet, HousingAnywhere, and anti-squat agency listings in one list. Runs on Apify. Clay-ready output.",
+  "author": {
+    "name": "Mamba Labs",
+    "email": "labs@mambamindsetgrowth.com"
+  },
+  "homepage": "https://mambabuilt.com",
+  "repository": "https://github.com/mambalabsdev/mcp-dutch-rental-listings",
+  "license": "MIT",
+  "category": "productivity",
+  "tags": [
+    "netherlands",
+    "rental",
+    "kamernet",
+    "housinganywhere",
+    "anti-squat",
+    "real estate"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "netherlands",
+    "rental",
+    "kamernet",
+    "housinganywhere",
+    "anti-squat",
+    "real estate"
+  ],
+  "mcpServers": ".mcp.json"
+}
