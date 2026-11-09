@@ -205,15 +205,15 @@ const server = new McpServer({
   version: pkg.version,
 });
 
-// Dutch Rental Listings (immutable actor ID sGKGsbwoX18lFb6dR). Every buyer facing input of the actor is exposed.
+// Netherlands Rental Listings (immutable actor ID sGKGsbwoX18lFb6dR). Every buyer facing input of the actor is exposed.
 server.registerTool(
   "search_dutch_rental_listings",
   {
-    title: "Search Dutch rental listings",
+    title: "Search Netherlands rental listings",
     description:
-      "Search Kamernet, HousingAnywhere, and 11 Dutch anti-squat agency sites for one city, province, or the whole Netherlands. Returns one deduplicated list with rent, size, type, municipal registration status with the proving sentence, hide reasons, and new since last run flags. Detail pages and landlord message drafts on your own model key are optional. Pararius, Huurwoningen, and Funda are not covered. Pay per event on Apify.",
+      "Search Kamernet, HousingAnywhere, and 11 Dutch anti-squat agency sites for one city, province, or the whole Netherlands. Returns one deduplicated list with rent, size, type, municipal registration status with the proving sentence, hide reasons, and new since last run flags. Detail pages and landlord message drafts on your own model key are optional. Pararius, Huurwoningen, Funda, and Gapph are not covered. Pay per event on Apify.",
     annotations: {
-      title: "Search Dutch rental listings",
+      title: "Search Netherlands rental listings",
       readOnlyHint: true,
       destructiveHint: false,
       idempotentHint: true,
@@ -260,7 +260,7 @@ server.registerTool(
       max_charge_usd: z.string().optional().describe("Optional. The run stops before a charge that would pass this amount. Free rows are always returned."),
     },
   },
-  async (args) => runActor("sGKGsbwoX18lFb6dR", "Dutch Rental Listings", asActorInput(args as Record<string, unknown>)),
+  async (args) => runActor("sGKGsbwoX18lFb6dR", "Netherlands Rental Listings", asActorInput(args as Record<string, unknown>)),
 );
 
 const transport = new StdioServerTransport();

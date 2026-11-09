@@ -1,8 +1,8 @@
-# Dutch Rental Listings MCP Server
+# Netherlands Rental Listings MCP Server
 
 [![npm version](https://img.shields.io/npm/v/@mambalabsdev/mcp-dutch-rental-listings)](https://www.npmjs.com/package/@mambalabsdev/mcp-dutch-rental-listings) [![license](https://img.shields.io/github/license/mambalabsdev/mcp-dutch-rental-listings)](https://github.com/mambalabsdev/mcp-dutch-rental-listings/blob/main/LICENSE)
 
-An MCP server for the Mamba Labs Dutch Rental Listings actor on Apify. One deduplicated list of Dutch rentals, with registration status.
+An MCP server for the Mamba Labs Netherlands Rental Listings actor on Apify. One deduplicated list of Dutch rentals, with registration status.
 
 ## What's Inside
 
@@ -18,7 +18,7 @@ An MCP server for the Mamba Labs Dutch Rental Listings actor on Apify. One dedup
 
 ## What it does
 
-Give a Dutch city, province, or the whole country. The actor reads Kamernet, HousingAnywhere, and 11 anti-squat agency sites over plain HTTP, merges them into one list without repeats, and returns rent, size, type, registration status with the proving sentence, hide reasons, and first seen and last seen per listing. It does not cover Pararius, Huurwoningen, or Funda.
+Give a Dutch city, province, or the whole country. The actor reads Kamernet, HousingAnywhere, and 11 anti-squat agency sites over plain HTTP, merges them into one list without repeats, and returns rent, size, type, registration status with the proving sentence, hide reasons, and first seen and last seen per listing. It does not cover Pararius, Huurwoningen, Funda, or Gapph.
 
 All of the work runs on Apify. This package is a thin client that starts the actor run, waits for it, and hands back the dataset rows.
 
@@ -124,7 +124,7 @@ Pay per event on Apify, billed to your Apify account. Prices in USD.
 
 | Event | Free plan | Bronze | Silver | Gold |
 |---|---|---|---|---|
-| `listing-row`, one listing | $0.001 | $0.00095 | $0.0009 | $0.00085 |
+| `listing-row`, one listing | $0.0011 | $0.001045 | $0.00099 | $0.000935 |
 | `detail-page`, one detail page read, with includeDetails on | $0.002 | $0.0019 | $0.0018 | $0.0017 |
 | `message-draft`, one message drafted on your own key, with draftMessages on | $0.003 | $0.00285 | $0.0027 | $0.00255 |
 | `apify-actor-start`, per run start | $0.012 | $0.012 | $0.012 | $0.012 |
