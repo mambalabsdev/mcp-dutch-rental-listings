@@ -1,7 +1,7 @@
 {
   "manifest_version": "0.3",
   "name": "mcp-dutch-rental-listings",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for Netherlands Rental Listings. Kamernet, HousingAnywhere, and anti-squat agency listings in one list. Runs on Apify. Clay-ready output.",
   "author": {
     "name": "Mamba Labs"
